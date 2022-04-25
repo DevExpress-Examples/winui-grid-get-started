@@ -1,0 +1,46 @@
+﻿<Window
+    x:Class="GridGetStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GridGetStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxg="using:DevExpress.WinUI.Grid"
+    mc:Ignorable="d">
+    <dxg:GridControl ItemsSource="{x:Bind ViewModel.Source}" 
+                     AutoGenerateColumns="False"
+                     NavigationStyle="Cell" 
+                     FilterString="[OrderDate] &gt; #2021-01-01# And [Quantity] &gt; 20"
+                     ShowFixedTotalSummary="True">
+        <dxg:GridControl.Columns>
+            <dxg:GridTextColumn FieldName="ProductName" GroupIndex="0"/>
+            <dxg:GridComboBoxColumn FieldName="Country" ItemsSource="{x:Bind ViewModel.Countries}"/>
+            <dxg:GridSpinEditColumn FieldName="UnitPrice" Mask="c"/>
+            <dxg:GridTextColumn FieldName="Quantity" SortOrder="Ascending" SortIndex="1"/>
+            <dxg:GridDateColumn FieldName="OrderDate" SortOrder="Descending" SortIndex="0"/>
+        </dxg:GridControl.Columns>
+        
+        <dxg:GridControl.GroupSummary>
+            <dxg:GridGroupSummaryItem FieldName="UnitPrice" SummaryType="Sum" 
+                                      DisplayFormat="Sum of Unit Price is {0:c}"/>
+        </dxg:GridControl.GroupSummary>
+        
+        <dxg:GridControl.TotalSummary>
+            <dxg:GridTotalSummaryItem SummaryType="Count" Alignment="Right"/>
+        </dxg:GridControl.TotalSummary>
+        
+        <dxg:GridControl.FormatConditions>
+            <!-- Changes the background of rows to light red
+                 if the quantity value is greater than 50. -->
+            <dxg:FormatCondition ApplyToRow="True" Expression="[Quantity] &gt; 50" 
+                             PredefinedFormatName="{x:Bind dxg:PredefinedFormatNames.LightRedFill}"/>
+            <!-- Changes the format of cell values in the Unit Price column to bold and red
+                 if they are greater than 80. -->
+            <dxg:FormatCondition FieldName="UnitPrice" Expression="[UnitPrice] &gt; 80">
+                <dxg:FormatCondition.Format>
+                    <dxg:Format FontWeight="Bold" Foreground="Red"/>
+                </dxg:FormatCondition.Format>
+            </dxg:FormatCondition>
+        </dxg:GridControl.FormatConditions>
+    </dxg:GridControl>
+</Window>
