@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1084573)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WinUI GridControl - Get Started
+# WinUI Data Grid - Get Started
 
 This example is the application created in the [Get Started with the WinUI Data Grid](http://docs.devexpress.com/WinUI/102028/controls/data-grid/get-started) tutorial. It demonstrates the base functionality of the [WinUI Data Grid](http://docs.devexpress.com/WinUI/102040/controls/data-grid).
 
