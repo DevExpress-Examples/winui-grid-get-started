@@ -3,28 +3,23 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1084573)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Product/Platform - Task
+# WinUI GridControl - Get Started
 
-This is the repository template for creating new examples. Describe the solved task here.
+This example is the application created in the [Get Started with the WinUI Data Grid](http://docs.devexpress.com/WinUI/102028/controls/data-grid/get-started) tutorial. It demonstrates the base functionality of the [WinUI Data Grid](http://docs.devexpress.com/WinUI/102040/controls/data-grid).
 
-Put a screenshot that illustrates the result here.
-
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+![image](https://user-images.githubusercontent.com/65009440/165080714-07eb6820-e8e4-4236-b8bd-63fc6d650204.png)
 
 ## Files to Look At
 
-- link.cs (VB: link.vb)
-- link.js
-- ...
+- [MainWindow.xaml](./CS/GridGetStarted/GridGetStarted/MainWindow.xaml)
+- [ViewModel.cs](./CS/GridGetStarted/GridGetStarted/ViewModel.cs)
 
 ## Documentation
 
-- link
-- link
-- ...
+- [Get Started with the WinUI Data Grid](http://docs.devexpress.com/WinUI/102028/controls/data-grid/get-started)
+- [WinUI Data Grid](http://docs.devexpress.com/WinUI/102040/controls/data-grid)
 
 ## More Examples
 
-- link
-- link
-- ...
+- [WinUI GridControl - Print GridControl Data in Code](https://github.com/DevExpress-Examples/winui-gridcontrol-print-grid-data)
+- [WinUI GridControl - Export GridControl Data in Code](https://github.com/DevExpress-Examples/winui-gridcontrol-export-grid-data)
