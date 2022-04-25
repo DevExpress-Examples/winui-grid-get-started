@@ -21,5 +21,6 @@ This example is the application created in the [Get Started with the WinUI Data 
 
 ## More Examples
 
+- [WinUI Data Grid - Bind to a Collection of Columns Specified in a ViewModel](https://github.com/DevExpress-Examples/winui-grid-mvvm-columns)
+- [WinUI Data Grid - Bind to InfiniteAsyncSource](https://github.com/DevExpress-Examples/winui-grid-virtual-sources)
 - [WinUI GridControl - Print GridControl Data in Code](https://github.com/DevExpress-Examples/winui-gridcontrol-print-grid-data)
-- [WinUI GridControl - Export GridControl Data in Code](https://github.com/DevExpress-Examples/winui-gridcontrol-export-grid-data)
