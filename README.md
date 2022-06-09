@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # WinUI Data Grid - Get Started
 
-This example is the application created in the [Get Started with the WinUI Data Grid](http://docs.devexpress.com/WinUI/102028/controls/data-grid/get-started) tutorial. It demonstrates the base functionality of the [WinUI Data Grid](http://docs.devexpress.com/WinUI/102040/controls/data-grid).
+This example is the application created in the [Get Started with the WinUI Data Grid](http://docs.devexpress.com/WinUI/102028/controls/data-grid/get-started) tutorial. It demonstrates the base functionality of the [WinUI Data Grid](http://docs.devexpress.com/WinUI/102040/controls/data-grid). 
 
 ![image](https://user-images.githubusercontent.com/65009440/165080714-07eb6820-e8e4-4236-b8bd-63fc6d650204.png)
 
